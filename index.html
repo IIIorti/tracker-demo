@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Form Example</title>
+    <link
+      rel="stylesheet"
+      href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+    />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="form.js"></script>
+    <script>
+      !(function (e, n, a, t, o, r) {
+        e.wef ||
+          (((t = e.wef =
+            function () {
+              t.process
+                ? t.process.apply(t, arguments)
+                : t.queue.push(arguments);
+            }).queue = []),
+          (t.t = +new Date()),
+          ((o = n.createElement(a)).defer = 1),
+          (o.src =
+            "https://revstagingstorageaccount.blob.core.windows.net/revengine-apistorage/tracker.min.js"),
+          (r = n.getElementsByTagName(a)[0]).parentNode.insertBefore(o, r));
+      })(window, document, "script"),
+        wef("init", null, {
+          programId: "10",
+          emailLabel: "email",
+          nameLabel: "name",
+        }),
+        wef("event", "pageload");
+    </script>
+  </head>
+  <body>
+    <div class="col-sm-6 col-sm-offset-3">
+      <h1>Processing an AJAX Form</h1>
+
+      <form action="process.php" method="POST">
+        <div id="name-group" class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            placeholder="Full Name"
+          />
+        </div>
+
+        <div id="email-group" class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="text"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="email@example.com"
+          />
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
