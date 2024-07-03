@@ -2,7 +2,7 @@
 
 # tracker-demo
 
-To run the project, you first need to install PHP [link]https://www.php.net/downloads.php
+To run the project, you first need to install PHP https://www.php.net/downloads.php
 
 The project can then be run using the command
 
