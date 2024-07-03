@@ -39,10 +39,10 @@ To check the operation of the tracker, you need to configure it for this in the 
     </script>
 ```
 
-# You also need to add a parameter with your userId to the URL.
+# You also need to add a parameter with your userId to the URL where instead of 108 will be your id.
 
 ```
-http://localhost:8000/?uId=108
+    http://localhost:8000/?uId=108
 ```
 
 After that, watch the console in the browser, after the successful creation of the lead or view, you will be able to see a message
