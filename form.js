@@ -13,6 +13,13 @@ $(document).ready(function () {
       encode: true,
     })
       .done(function (data) {
+        //
+        wef("event", "createLead", {
+          name: formData.name,
+          email: formData.email,
+        });
+        //^^^^^^^^^
+
         $(".form-group").removeClass("has-error");
         $(".help-block").remove();
 
